@@ -1,0 +1,46 @@
+(.venv) semenlukin@Plaut:~/itmo/python-advanced-assignments/hw_1$ tail artifacts/file.txt artifacts/1/output_script.txt 
+==> artifacts/file.txt <==
+Не страшно?
+Да?!»
+Послушайте!
+Ведь, если звезды
+зажигают —
+значит — это кому-нибудь нужно?
+Значит — это необходимо,
+чтобы каждый вечер
+над крышами
+загоралась хоть одна звезда?!
+
+==> artifacts/1/output_script.txt <==
+    30  загоралась хоть одна звезда?!
+(.venv) semenlukin@Plaut:~/itmo/python-advanced-assignments/hw_1$ python number_lines.py 
+123qwe
+     1  123qwe
+qwe123
+     2  qwe123
+hhhhhhh
+     3  hhhhhhh
+nj
+     4  nj
+(.venv) semenlukin@Plaut:~/itmo/python-advanced-assignments/hw_1$ tail artifacts/file.txt 
+Не страшно?
+Да?!»
+Послушайте!
+Ведь, если звезды
+зажигают —
+значит — это кому-нибудь нужно?
+Значит — это необходимо,
+чтобы каждый вечер
+над крышами
+загоралась хоть одна звезда?!
+(.venv) semenlukin@Plaut:~/itmo/python-advanced-assignments/hw_1$ tail
+12345
+
+213
+
+ffff
+12345
+
+213
+
+ffff
