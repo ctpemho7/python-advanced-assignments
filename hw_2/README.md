@@ -2,11 +2,13 @@
 
 Все артефакты представлены в `hw_2/artifacts/`.
 
-Пример сгенерированного файла в `hw_2/artifacts/output.tex`.
+Пример сгенерированного файла в `hw_2/artifacts/final_output.tex`.
 
 ## Задание 1
 
 Функция: `generate_table`, модуль `generate`.
+
+Артефакт: `output_step1.tex`.
 
 ## Задание 2
 
