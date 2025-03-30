@@ -4,8 +4,8 @@ from typing import Iterable
 
 class Matrix:
     def __init__(self, data: Iterable):
-        if not data or not all(isinstance(row, Iterable) for row in data):
-            raise ValueError("Входной параметр - двумерный итератор")
+        if not all(isinstance(row, Iterable) for row in data):
+            raise ValueError("Входной параметр должен быть двумерным итератором")
         
         # Проверяем, что все строки имеют одинаковую длину
         row_lengths = [len(row) for row in data]
