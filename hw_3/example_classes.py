@@ -1,0 +1,21 @@
+from matrix_calc.mclass import Matrix
+
+import numpy as np
+np.random.seed(0)
+
+
+if __name__ == "__main__":
+
+    A = Matrix(np.random.randint(0, 10, (10, 10)))
+    B = Matrix(np.random.randint(0, 10, (10, 10)).tolist())
+    path = "hw_3/artifacts/1"
+
+    C = A @ B
+    C.save_to_file("matrix@.txt", path)
+
+    C = A + B
+    C.save_to_file("matrix+.txt", path)
+
+    C = A * B
+    C.save_to_file("matrix*.txt", path)
+
