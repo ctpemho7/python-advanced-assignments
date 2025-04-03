@@ -1,0 +1,59 @@
+semenlukin@Plaut:~/itmo/python-advanced-assignments$ python hw_4/processes.py
+[23:13:12.215880] Input your message:
+hello
+[23:13:16.814524] Main: sending 'hello' to Process A
+[23:13:16.818248] Input your message:
+[23:13:17.217448] Process A forwarded to Process B: 'hello' 
+[23:13:17.219675] Process B: encodes ROT13: 'uryyb'
+[23:13:17.220536] Process B forwarded to Main
+[23:13:17.236239] Main: received from Process B - 'uryyb'
+world
+[23:13:27.271689] Main: sending 'world' to Process A
+[23:13:27.271897] Input your message:
+[23:13:32.252892] Process A forwarded to Process B: 'world' 
+[23:13:32.253264] Process B: encodes ROT13: 'jbeyq'
+[23:13:32.253514] Process B forwarded to Main
+[23:13:32.258364] Main: received from Process B - 'jbeyq'
+^C
+Interrupted!
+Process Process-2:
+Process Process-1:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/semenlukin/itmo/python-advanced-assignments/hw_4/processes.py", line 28, in process_a
+    time.sleep(5)
+KeyboardInterrupt
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/semenlukin/itmo/python-advanced-assignments/hw_4/processes.py", line 34, in process_b
+    if not input_queue.empty():
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/queues.py", line 129, in empty
+    return not self._poll()
+               ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 440, in _poll
+    r = wait([self], timeout)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 1130, in wait
+    selector.register(obj, selectors.EVENT_READ)
+  File "/usr/lib/python3.12/selectors.py", line 352, in register
+    key = super().register(fileobj, events, data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/selectors.py", line 238, in register
+    key = SelectorKey(fileobj, self._fileobj_lookup(fileobj), events, data)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/selectors.py", line 215, in _fileobj_lookup
+    def _fileobj_lookup(self, fileobj):
+    
+KeyboardInterrupt
+
+Stopped
