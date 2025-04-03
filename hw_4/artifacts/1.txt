@@ -1,0 +1,5 @@
+semenlukin@Plaut:~/itmo/python-advanced-assignments$ python hw_4/fibonacci.py
+Вычисление 10 раз числа Фибонначи от 40...
+run_sync execution time: 148.08 secs
+run_threads execution time: 165.82 secs
+run_processes execution time: 59.62 secs
