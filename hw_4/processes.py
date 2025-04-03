@@ -65,11 +65,6 @@ def main():
             print(f"[{datetime.now().time()}] Main: sending '{user_input}' to Process A")
             main_to_a.put(user_input)
             
-            # Проверка сообщений от Process B
-            # if not b_to_main.empty():
-            #     result = b_to_main.get()
-            #     print(f"[{datetime.now().time()}] Main: received from Process B - '{result}'")
-                
     except KeyboardInterrupt:
         print("\nInterrupted!")
     finally:
