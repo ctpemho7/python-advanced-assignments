@@ -1,0 +1,18 @@
+semenlukin@Plaut:~/itmo/python-advanced-assignments$ python hw_4/integrate.py
+Result of original function: 1.0000 of time 1.3535s
+n_jobs= 1 | ThreadPool: 1.1953s, result: 1.0000 | ProcessPool: 0.9794s, result: 1.0000
+n_jobs= 2 | ThreadPool: 1.8448s, result: 1.0000 | ProcessPool: 0.7289s, result: 1.0000
+n_jobs= 3 | ThreadPool: 2.0102s, result: 1.0000 | ProcessPool: 0.5045s, result: 1.0000
+n_jobs= 4 | ThreadPool: 2.0090s, result: 1.0000 | ProcessPool: 0.4229s, result: 1.0000
+n_jobs= 5 | ThreadPool: 1.9313s, result: 1.0000 | ProcessPool: 0.4075s, result: 1.0000
+n_jobs= 6 | ThreadPool: 2.0408s, result: 1.0000 | ProcessPool: 0.4146s, result: 1.0000
+n_jobs= 7 | ThreadPool: 1.9673s, result: 1.0000 | ProcessPool: 0.4072s, result: 1.0000
+n_jobs= 8 | ThreadPool: 1.9827s, result: 1.0000 | ProcessPool: 0.3963s, result: 1.0000
+n_jobs= 9 | ThreadPool: 1.9541s, result: 1.0000 | ProcessPool: 0.4275s, result: 1.0000
+n_jobs=10 | ThreadPool: 2.0198s, result: 1.0000 | ProcessPool: 0.4068s, result: 1.0000
+n_jobs=11 | ThreadPool: 1.9876s, result: 1.0000 | ProcessPool: 0.4100s, result: 1.0000
+n_jobs=12 | ThreadPool: 2.0967s, result: 1.0000 | ProcessPool: 0.4396s, result: 1.0000
+n_jobs=13 | ThreadPool: 1.9918s, result: 1.0000 | ProcessPool: 0.4268s, result: 1.0000
+n_jobs=14 | ThreadPool: 2.0706s, result: 1.0000 | ProcessPool: 0.4338s, result: 1.0000
+n_jobs=15 | ThreadPool: 1.8656s, result: 1.0000 | ProcessPool: 0.4762s, result: 1.0000
+n_jobs=16 | ThreadPool: 1.9946s, result: 1.0000 | ProcessPool: 0.4181s, result: 1.0000
